@@ -23,7 +23,7 @@ app.post("/sign-up", (req, res) => {
         username: user.username,
         avatar: user.avatar
     })
-    res.send([...users])
+    res.send("ok")
 })
 
 app.post("/tweets",(req,res)=>{
@@ -34,7 +34,7 @@ app.post("/tweets",(req,res)=>{
         avatar: user.avatar,
         tweet: tweet.tweet
     })
-    res.send([...tweets])
+    res.send("ok")
 })
 
 app.get("/tweets", (req, res) => {
